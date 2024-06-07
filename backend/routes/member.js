@@ -5,7 +5,7 @@ const path = require('path');
 
 const router = express.Router();
 
-// Set up multer for file uploads
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadsDir = path.join(__dirname, '../uploads');
@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// API route to add a new member
+
 router.post('/', upload.single('profilePic'), async (req, res) => {
   try {
     const { relationship, firstName, middleName, lastName, status, birthDate, birthPlace, currentPlace } = req.body;
