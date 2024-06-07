@@ -19,7 +19,7 @@ const Header = ({ onMemberClick }) => {
             alt="Notification"
             className="notification-icon"
           />
-          {/* End of Bell Icon */}
+        
           <div className="profile-icon">R</div>
         </div>
       </div>
