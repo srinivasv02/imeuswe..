@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css'; // Make sure to adjust the path if needed
+import './header.css'; 
 
 const Header = ({ onMemberClick }) => {
   return (
